@@ -1,0 +1,877 @@
+/* * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family:'Rubik', sans-serif; */
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a { 
+    color: #242422; 
+}
+a:hover {
+    color: #ffd500;
+    text-decoration: none;
+}
+/*--------- Header -------------*/
+.top-info-bar {
+    background: #ffd500;
+    color: #242422;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+.icon-heart {
+    color: #fe696a;
+}
+header {
+    background: #F8F8F8;
+    padding: 40px 0 10px 0;
+}
+.input-buscar {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dae1e7;
+    font-size: 15px;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px 0 0 5px;
+    color: #6d6d6d;
+    /* font-family: 'Rubik', sans-serif; */
+    font-weight: 400;
+    border-right: 0;
+}
+.btn-search {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dae1e7;
+    border-left: 0;
+    font-size: 15px;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 5px 5px 0;
+    color: #242422;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+.btn-search:hover {
+    background: #ffd500;
+    color: #fff;
+}
+.icon-search {
+    font-size: 12px;
+}
+.menu {
+    padding: 0;
+}
+.menu a {
+    color: #242422;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #ffd500;
+}
+.a-menu-principal {
+    font-weight: 600;
+}
+.fz-icon {
+    font-size: 20px;
+}
+.badge-danger {
+    font-size: 8px;
+    line-height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    right: 16px;
+}
+.precio {
+    font-size: 10px;
+    line-height: 10px;
+}
+.p-wish {
+    font-size: 10px;
+    line-height: 10px;
+}
+.p-sign-in {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+/* -----------Carousel base class------------- */
+  /* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 48px;
+    z-index: 10;
+    color: #131212;
+  }
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 33.6px;
+    color: #131212;
+  }
+  
+  /* Declare heights because of positioning of img element */
+.carousel-item > img {
+    height: auto;  
+  }
+.featurette-heading {
+    font-size: 50px;
+  }
+.featurette-heading {
+    margin-top: 112px;
+  }
+.btn-slider {
+    background: #ffd500;
+    border-color: #f7cb02;
+    color: #242422;
+    padding: 10px 22px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 5px;
+  }  
+.btn-slider:hover {
+    background-color: #242222;
+    border-color: #131212;
+    opacity: .9;
+    color: #ffd500;
+  }
+.carousel-indicators li {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+  }
+  /*------- Cards-------------- */
+.z {
+      margin-top: -70px;
+      position: relative;
+      z-index: 15;
+      background: #fff;
+    }
+.box-shadow {
+     box-shadow: 0 4px 24px -6px rgba(0,0,0,0.1); 
+    }
+.container-sm {
+        max-width: 850px;
+    }
+    /* -------Productos----------- */
+.trending {
+        font-size: 28px;
+        margin-bottom: 60px;
+        font-weight: 600;
+        line-height: 19px;
+        color: #373f50;
+    }
+.corazon {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        z-index: 15;
+        background: #f2f2f2;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        padding: 0;
+        display: inline-block;
+        text-align: center;
+        border: 0;
+        color: rgba(0, 0, 0, .8)
+    }
+.corazon:hover {
+        border: 0 !important;
+        color: #fe3638;
+        background: #f2f2f2;
+    }
+.corazon:focus {
+        box-shadow: none !important;
+        outline: 0px;
+    }
+.corazon:active {
+        background: #f2f5f9 !important;
+        border: 0 !important;
+        color: #fff !important;
+    } 
+.card-title-card-md {
+        font-size: 14px;
+        font-weight: 600;
+    }    
+.card-subtitle {
+        font-size: 12px;
+    }
+.icon-star-1, .icon-star-half-alt {
+        color: #fea569;
+    }
+.btn-orange {
+        background-color: #ffd500;
+        border-color: #f7cb02;
+        color: #242222;
+        font-weight: 500;    
+    }
+.btn-light {
+    font-weight: 500;
+}    
+.btn-orange:hover {
+        opacity: .8;
+        color: #ffd500;
+        background-color: #242222;
+        border-color: #131212;
+    }
+.card-subtitle:hover {
+        text-decoration: none;
+    }
+.card-borde:hover {
+        box-shadow: 0 4px 24px -6px rgba(0,0,0,0.1); 
+    }
+.btn-outline-primary {
+        color: #028090;
+        background-color: #fff;
+        border: 1px solid #05afc6;
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 10px 22px;
+    }
+.btn-outline-primary:hover {
+        color: #fff;
+        background-color: #028090;
+        border: 1px solid #05afc6;
+        transition: color 0.25s ease-in-out,background-color 0.25s ease-in-out,border-color 0.25s ease-in-out,box-shadow 0.2s ease-in-out;
+    }
+    /* -----------------Banner------------------------ */
+.btn-shadow {
+    background-color: #ffd500;
+    border-color: #f7cb02;
+    color: #242222;
+    box-shadow: 0 8px 18px -8px rgba(106, 90, 2, 0.9);
+    }
+.btn-shadow:hover {
+        box-shadow: none;
+        background-color: #f7cb02;
+        border-color: #ffd500;
+        color: #131212;
+    }
+.font-size-lg {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21.6px; 
+    }
+.fz-h3 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 33.6px; 
+    }
+    
+.bg-banner {
+        background-image: url(img/banner-bg-1.jpg);
+    }
+.h5-fz {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px; 
+    }
+.p-fz {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px; 
+    }
+    /*--------- Hoodie ------------*/
+.bg-light-custom {
+        /* background-image: url("img/cat-lg-04-snow-up2.jpg");
+        background-position: center, top;
+        background-repeat: no-repeat; */
+        background: #006097;
+        padding: 0 3px;
+    }
+.absolute {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+.card-title-card-sm {
+        font-size: 14px;
+        font-weight: 600;
+    }
+.card-subtitle-sm{
+        font-size: 12px;
+    }
+.card-body-sm {
+        padding: 6px 3px;
+    }
+.icon-star-1-sm{
+        font-size: 11px;
+        color: #fea569;
+    }
+.card-title-card-lg {
+        font-size: 28px;
+        line-height: 33.6px;
+        font-weight: 500;
+        color: #fff;
+    }
+.subtitle-card-lg5 {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        color: #ffd500;
+        text-decoration: none;
+    }
+.subtitle-card-lg5:hover {
+        text-decoration: none;
+        color: #f7cb02;
+        opacity: .6;
+    }
+.btn-light-hoodie {   
+        width: 36px;
+        height: 36px;
+        font-size: 10.58px;
+        line-height: 36px;
+        color: #000;
+        text-align: center;
+        background: #fff;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 100px;
+        transition: all .3s ease;
+        padding: 0;
+    }
+.btn-light-hoodie:hover {
+        background: #fff;
+    }
+    /* --------------Slider Instagram------------- */
+ /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: end; */
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 28px;
+	color: #131212;
+	justify-content: center;
+	display: flex;
+	/* font-family: "Rubik", sans-serif; */
+}
+.contenedor-titulo-controles h5 {
+	color: #fff;
+	font-size: 20px;
+	color: #6b6b6b;
+	justify-content: center;
+	display: flex;
+}
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 8px;
+	width: 8px;
+	cursor: pointer;
+	border: none;
+	margin-right: 3px;
+	border-radius: 50%;
+}
+
+/* .contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: #833ab4;
+} */
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+	/* margin-bottom: 70px; */
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	font-size: 30px;
+	height: calc(100% - 40px);
+	/* top: calc(100% - 350px); */
+	line-height: 40px;
+	width: 60px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 98;
+	transition: .2s ease all;
+	color: #000;
+}
+.fas {
+	font-weight: 300;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.instagram-h3 {
+    font-size: 28px;
+    /* margin-bottom: 80px; */
+    font-weight: 600;
+    line-height: 19px;
+    color: #373f50;
+}
+.gringosoc-h5 {
+    font-size: 28px;
+    /* margin-bottom: 80px; */
+    font-weight: 600;
+    line-height: 19px;
+    color: #373f50;
+}
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .1s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	margin: 1px;
+	position: relative;
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.8);
+	overflow: hidden;
+	transition: .5s ease;
+	opacity: 0;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula:hover .overlay {
+	width: 100%;
+	opacity: 1;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+.fa-instagram {
+	/* color: #5851db; */
+	color: #fff;
+	font-size: 30px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	white-space: nowrap;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+ /*------------- Follow-----------------*/
+ .section-fbk {
+     background: #D1F5FF;
+ }
+ .section-instagram {
+    background: #edeef9;
+}
+.icon-insta {
+    color: #7176D3;
+}
+.icon-fbk {
+    color: #3b5998;
+}
+ .fz-text-follow {
+     font-size: 20px;
+     line-height: 24px;
+     font-weight: 500;
+     color: #000;
+ }
+ .a-follow:hover {
+     text-decoration: none;
+ }
+ .fz-p-follow {
+     font-size: 14px;
+     line-height: 21px;
+     font-weight: 400;
+     color: #000;
+ }
+ /* ---------Footer list---------------- */
+ .container-lg {
+     max-width: 1260px;
+ }
+ .h3-list{
+    font-size: 17px;
+    line-height: 20.4px;
+    font-weight: 500;
+    color: #fff;
+ }
+ .ul-list {
+    list-style: none;
+    padding-left: 0;
+ }
+ .li-list {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 6px;
+ }
+ .li-list a {
+     color: #f2f2f2;
+     opacity: .7;
+     text-align: left;
+ }
+ .li-list a:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+ }
+ .bg-dark-1 {
+     background: #373F50;
+ }
+ .p-list {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 6px;
+    color: #f2f2f2;
+     opacity: .7;
+     text-align: left; 
+ }
+ 
+ .fz-btn-append {
+     padding: .625rem 1.375rem !important;
+     font-size: .9375rem !important;
+     height: 44px;
+ }
+ .form-control {
+     font-size: 15px;
+     height: 44px !important;
+ }
+ .fz-google {
+     font-size: 11px;
+ }
+ .fz-app-store {
+     font-size: 16px;
+     color: #fff;
+ }
+.btn-dark-1 {
+    background: #2b3445;
+}
+.btn-dark-1:hover {
+    opacity: .8;
+}
+.bg-dark-2 {
+ background: #2b3445;
+}
+.p-list-1 {
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 6px;
+    color: #f2f2f2;
+    opacity: .7;
+    text-align: left; 
+ }
+ .p-list:hover {
+     color: #fff;
+     opacity: .9;
+     text-decoration: none;
+ }
+ ul {
+     list-style: none;
+ }
+ 
+.icon-redes-footer {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    background: #3c4454;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+.icon-redes-footer:hover {
+    background: #fff;
+}
+
+ .rrss-fbk:hover {color: #3b5998;}
+ .rrss-ins:hover {color: #5851db;}
+ .rrss-twi:hover {color: #1da1f2;}
+ .rrss-you:hover {color: #ff0000;}
+ .rrss-wat:hover {color: #25d366;}
+/* ----------Boton flotante------------ */
+.volver {
+    position:fixed;
+    bottom:70px;
+    right:20px;
+    background-color:#3AAFD2;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    z-index:100;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    line-height: 80px;
+    opacity: .5;
+    background:#242422;
+  }
+.icon-up-open-big {
+    color: #fff;
+}
+
+
+
+ 
+
+
+/* -------MEDIAQUERIES--------- */
+@media screen and (max-width:1199px) {
+    .badge-danger {
+        right: 9px;
+    }
+    .container-sm {
+        max-width: 750px;
+    }
+    .carousel-item > img {
+       min-height: 550px;
+    }
+}
+@media screen and (max-width:991px) {
+    .menu {
+        position:fixed;
+        bottom:0;
+        left: 0;
+        z-index:98;
+        background: #F8F9FA;
+        height: 56px;
+        border-top: 1px solid #e3e9ef;
+        box-shadow: -20px 0 32px 0 rgba(43,52,69,0.15);
+    }
+    .menu a {
+        border-left: 2px solid #e3e9ef;
+        line-height: 36px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .buscar {
+        padding-top: 15px;
+    }
+    .fondo-enlace {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        background: rgba(0, 0, 0, .5);
+        z-index: 99;
+        display: none;
+    }
+    .fondo-enlace.active {
+        display: block;
+    }
+    .barra-lateral-izquierda {
+        width: 75%;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        background: rgba(0,0,0,0.90);
+        height: 100vh;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        transform: translateX(-100%);
+        transition: all .3s ease;
+        overflow: scroll;
+    }
+    .barra-lateral-izquierda.active {
+        transform: translateX(0%);
+    }
+    .barra-lateral-izquierda a {
+        padding: 20px;
+        color: rgba(255, 255, 255, 0.8)
+    }
+    .barra-lateral-izquierda a:hover {
+        color: #ffd500;
+        background-color: #242222;
+        border-color: #131212;
+    }
+    .badge-danger {
+       position: static;
+       padding: 0;
+    }
+    .carousel-item > img {
+       min-height: 480px;
+    }
+    .color {
+        border-left: 1px solid #e3e9ef;
+    }
+    .fondo {
+        background-image: url(img/banner-bg-1.jpg);
+        background-repeat: repeat-x;
+    }
+    .container-sm {
+        max-width: 650px;
+    }
+    .bg-dark-2 {
+        margin-bottom: 56px;
+    }
+    .text-center-custom-less-lg{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+	
+	.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+		min-width: 33%;
+	}
+	.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+	.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+		width: 40px;
+	} 
+}
+
+
+@media screen and (max-width:767px) {
+    .carousel-item > img {
+        min-height: 400px;
+    }
+    .carousel-caption p {
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .btn-slider {
+        padding: 7px;
+        font-size: 14px;
+    }
+    .texto-h1{
+        font-size: 24px;
+    }
+    .container-sm {
+        max-width: 550px;
+    }
+    .volver {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+        line-height: 55px;
+    }
+}
+@media screen and (max-width:575px) {
+    .top-info-bar {
+        font-size: 12px;
+    }
+    .carousel-item > img {
+       min-height: 350px;
+    }
+    .carousel-caption {
+        width: 50%;
+        left: 4%;
+        bottom: 32px;
+    }
+    .btn-browse-gallery {
+        left: 40%;
+        bottom: 45px;
+    }
+    .texto-h1 {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 13px;
+        line-height: 19.5px;
+    }
+    .btn-slider {
+        padding: 6px;
+        font-size: 13px;
+    }
+    .z {
+        position: relative;
+        margin-top: 0;
+      } 
+    .card {
+        margin-bottom: 0 !important;
+    } 
+    .box-shadow {
+        box-shadow: none; 
+    }
+    .box-shadow-card {
+        box-shadow: 0 4px 24px -6px rgba(0,0,0,0.1); 
+       }
+    .margin-moviles {
+        margin: 10px;
+    }  
+    .trending {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .mr-custom-li {
+        margin-right: 8px !important;
+    }
+    /*---------------------- Slider Instagram----------------------------------- */
+    .peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+		min-width: 50%;
+	}
+	.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+	.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+		width: 30px;
+	} 
+	.fa-instagram {
+		font-size: 24px;
+	} 
+}
+/* ------ Iphone 5 5s ----------- */
+@media screen and (max-width:340px) {
+    .input-buscar {
+        padding-right: 5px;
+    }
+    .carousel-caption p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
