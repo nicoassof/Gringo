@@ -644,7 +644,7 @@ header {
 .volver {
     position:fixed;
     bottom:65px;
-    right:15px;
+    right:10px;
     background-color:#3AAFD2;
     color:#FFF;
     border-radius:50px;
@@ -660,7 +660,7 @@ header {
   .volver-2 {
     position:fixed;
     bottom:130px;
-    right:15px;
+    right:10px;
     text-align:center;
     z-index:99;
     background: rgba(255, 255, 255, 0);
