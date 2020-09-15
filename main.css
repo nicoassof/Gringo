@@ -643,8 +643,8 @@ header {
 /* ----------Boton flotante------------ */
 .volver {
     position:fixed;
-    bottom:70px;
-    right:20px;
+    bottom:65px;
+    right:15px;
     background-color:#3AAFD2;
     color:#FFF;
     border-radius:50px;
@@ -659,8 +659,8 @@ header {
   }
   .volver-2 {
     position:fixed;
-    bottom:135px;
-    right:20px;
+    bottom:130px;
+    right:15px;
     text-align:center;
     z-index:99;
     background: rgba(255, 255, 255, 0);
@@ -813,10 +813,11 @@ header {
         height: 40px;
         font-size: 20px;
         line-height: 40px;
+	bottom: 60px;    
     }
     .volver-2 {
         position:fixed;
-        bottom:115px;
+        bottom:110px;
       }
     .volver-2 img {
         width: 40px;
